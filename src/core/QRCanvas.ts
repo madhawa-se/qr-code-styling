@@ -151,7 +151,8 @@ export default class QRCanvas {
 
         canvasContext.fillStyle = gradient;
       } else if (options.backgroundOptions.color) {
-        canvasContext.fillStyle = options.backgroundOptions.color;
+        // canvasContext.fillStyle = options.backgroundOptions.color;
+        canvasContext.fillStyle = "rgba(255, 255, 255, 0)";
       }
       canvasContext.fillRect(0, 0, this._canvas.width, this._canvas.height);
     }
